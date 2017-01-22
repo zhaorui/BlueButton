@@ -5,4 +5,4 @@ Youtube原创视频：https://www.youtube.com/watch?v=7MZJxPOo_xU&list=PLE83F832
 
 效果图
 
-![FE](./img/BlueButton)
+![FE](./img/BlueButton.png)
