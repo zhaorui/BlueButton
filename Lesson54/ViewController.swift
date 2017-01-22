@@ -10,11 +10,17 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var blue_button: NSButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let blue_image = NSImage(size: NSSize(width: 30, height: 10), flipped: false) { rect in
+            NSColor.blue.setFill()
+            NSBezierPath(rect: rect).fill()
+            return true
+        }
+        blue_button.title = "Button"
     }
+    
 
     override var representedObject: Any? {
         didSet {

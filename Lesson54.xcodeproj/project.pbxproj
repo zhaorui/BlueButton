@@ -13,6 +13,7 @@
 		C5629C781E33685A00D74345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5629C761E33685A00D74345 /* Main.storyboard */; };
 		C5629C831E33685A00D74345 /* Lesson54Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5629C821E33685A00D74345 /* Lesson54Tests.swift */; };
 		C5629C8E1E33685A00D74345 /* Lesson54UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5629C8D1E33685A00D74345 /* Lesson54UITests.swift */; };
+		C5B7B6551E345A35006ED415 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7B6541E345A35006ED415 /* BlueButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C5629C891E33685A00D74345 /* Lesson54UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson54UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5629C8D1E33685A00D74345 /* Lesson54UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson54UITests.swift; sourceTree = "<group>"; };
 		C5629C8F1E33685A00D74345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B7B6541E345A35006ED415 /* BlueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				C5629C701E33685A00D74345 /* AppDelegate.swift */,
 				C5629C721E33685A00D74345 /* ViewController.swift */,
+				C5B7B6541E345A35006ED415 /* BlueButton.swift */,
 				C5629C741E33685A00D74345 /* Assets.xcassets */,
 				C5629C761E33685A00D74345 /* Main.storyboard */,
 				C5629C791E33685A00D74345 /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				C5629C731E33685A00D74345 /* ViewController.swift in Sources */,
 				C5629C711E33685A00D74345 /* AppDelegate.swift in Sources */,
+				C5B7B6551E345A35006ED415 /* BlueButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +509,7 @@
 				C5629C941E33685A00D74345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5629C951E33685A00D74345 /* Build configuration list for PBXNativeTarget "Lesson54Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				C5629C971E33685A00D74345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5629C981E33685A00D74345 /* Build configuration list for PBXNativeTarget "Lesson54UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				C5629C9A1E33685A00D74345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
