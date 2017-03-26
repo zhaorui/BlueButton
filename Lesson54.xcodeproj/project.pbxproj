@@ -13,6 +13,7 @@
 		C5629C781E33685A00D74345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5629C761E33685A00D74345 /* Main.storyboard */; };
 		C5629C831E33685A00D74345 /* Lesson54Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5629C821E33685A00D74345 /* Lesson54Tests.swift */; };
 		C5629C8E1E33685A00D74345 /* Lesson54UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5629C8D1E33685A00D74345 /* Lesson54UITests.swift */; };
+		C578A4DD1E87F68B00434CC4 /* CloseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C578A4DC1E87F68B00434CC4 /* CloseButton.m */; };
 		C5B7B6551E345A35006ED415 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7B6541E345A35006ED415 /* BlueButton.swift */; };
 		C5E0BF671E86BF6000637531 /* YellowButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E0BF661E86BF6000637531 /* YellowButtonCell.m */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,8 @@
 		C5629C891E33685A00D74345 /* Lesson54UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson54UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5629C8D1E33685A00D74345 /* Lesson54UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson54UITests.swift; sourceTree = "<group>"; };
 		C5629C8F1E33685A00D74345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C578A4DB1E87F68B00434CC4 /* CloseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloseButton.h; sourceTree = "<group>"; };
+		C578A4DC1E87F68B00434CC4 /* CloseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloseButton.m; sourceTree = "<group>"; };
 		C5B7B6541E345A35006ED415 /* BlueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		C5E0BF641E86BF6000637531 /* Lesson54-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lesson54-Bridging-Header.h"; sourceTree = "<group>"; };
 		C5E0BF651E86BF6000637531 /* YellowButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowButtonCell.h; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 				C5629C811E33685A00D74345 /* Lesson54Tests */,
 				C5629C8C1E33685A00D74345 /* Lesson54UITests */,
 				C5629C6E1E33685A00D74345 /* Products */,
+				C578A4DE1E87FD3D00434CC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +112,8 @@
 				C5E0BF661E86BF6000637531 /* YellowButtonCell.m */,
 				C5629C741E33685A00D74345 /* Assets.xcassets */,
 				C5629C761E33685A00D74345 /* Main.storyboard */,
+				C578A4DB1E87F68B00434CC4 /* CloseButton.h */,
+				C578A4DC1E87F68B00434CC4 /* CloseButton.m */,
 				C5629C791E33685A00D74345 /* Info.plist */,
 				C5E0BF641E86BF6000637531 /* Lesson54-Bridging-Header.h */,
 			);
@@ -130,6 +136,13 @@
 				C5629C8F1E33685A00D74345 /* Info.plist */,
 			);
 			path = Lesson54UITests;
+			sourceTree = "<group>";
+		};
+		C578A4DE1E87FD3D00434CC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 				C5629C731E33685A00D74345 /* ViewController.swift in Sources */,
 				C5E0BF671E86BF6000637531 /* YellowButtonCell.m in Sources */,
 				C5629C711E33685A00D74345 /* AppDelegate.swift in Sources */,
+				C578A4DD1E87F68B00434CC4 /* CloseButton.m in Sources */,
 				C5B7B6551E345A35006ED415 /* BlueButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
