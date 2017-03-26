@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
@@ -686,7 +686,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lKw-L5-ntC" customClass="BlueButton" customModule="Lesson54" customModuleProvider="target">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lKw-L5-ntC" userLabel="Blue Button" customClass="BlueButton" customModule="Lesson54" customModuleProvider="target">
                                 <rect key="frame" x="183" y="114" width="114" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="o4S-Bz-b5X"/>
@@ -697,14 +697,28 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wnk-qk-0SH" userLabel="Yellow Button">
+                                <rect key="frame" x="20" y="20" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="1xm-hI-bMl"/>
+                                    <constraint firstAttribute="height" constant="70" id="fwh-86-hGH"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="Button" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qbu-KG-w0I" customClass="YellowButtonCell">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="lKw-L5-ntC" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="AmZ-ep-FvR"/>
+                            <constraint firstAttribute="bottom" secondItem="wnk-qk-0SH" secondAttribute="bottom" constant="20" id="E6A-bb-u5f"/>
                             <constraint firstItem="lKw-L5-ntC" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="PwN-Be-Cum"/>
+                            <constraint firstItem="wnk-qk-0SH" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="TGI-Zk-WHN"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="blue_button" destination="lKw-L5-ntC" id="Kz3-TM-f6g"/>
+                        <outlet property="yellow_button" destination="wnk-qk-0SH" id="aGD-TO-Ybe"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

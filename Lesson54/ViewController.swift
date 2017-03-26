@@ -11,14 +11,14 @@ import Cocoa
 class ViewController: NSViewController {
 
     @IBOutlet weak var blue_button: NSButton!
+    @IBOutlet weak var yellow_button: NSButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let blue_image = NSImage(size: NSSize(width: 30, height: 10), flipped: false) { rect in
-            NSColor.blue.setFill()
-            NSBezierPath(rect: rect).fill()
-            return true
-        }
         blue_button.title = "Button"
+        
+        //set below to true, yellow cell won't draw the frame
+        yellow_button.showsBorderOnlyWhileMouseInside = true;
     }
     
 

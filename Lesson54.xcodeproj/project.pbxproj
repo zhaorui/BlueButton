@@ -14,6 +14,7 @@
 		C5629C831E33685A00D74345 /* Lesson54Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5629C821E33685A00D74345 /* Lesson54Tests.swift */; };
 		C5629C8E1E33685A00D74345 /* Lesson54UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5629C8D1E33685A00D74345 /* Lesson54UITests.swift */; };
 		C5B7B6551E345A35006ED415 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7B6541E345A35006ED415 /* BlueButton.swift */; };
+		C5E0BF671E86BF6000637531 /* YellowButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E0BF661E86BF6000637531 /* YellowButtonCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		C5629C8D1E33685A00D74345 /* Lesson54UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson54UITests.swift; sourceTree = "<group>"; };
 		C5629C8F1E33685A00D74345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5B7B6541E345A35006ED415 /* BlueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		C5E0BF641E86BF6000637531 /* Lesson54-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lesson54-Bridging-Header.h"; sourceTree = "<group>"; };
+		C5E0BF651E86BF6000637531 /* YellowButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowButtonCell.h; sourceTree = "<group>"; };
+		C5E0BF661E86BF6000637531 /* YellowButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowButtonCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,12 @@
 				C5629C701E33685A00D74345 /* AppDelegate.swift */,
 				C5629C721E33685A00D74345 /* ViewController.swift */,
 				C5B7B6541E345A35006ED415 /* BlueButton.swift */,
+				C5E0BF651E86BF6000637531 /* YellowButtonCell.h */,
+				C5E0BF661E86BF6000637531 /* YellowButtonCell.m */,
 				C5629C741E33685A00D74345 /* Assets.xcassets */,
 				C5629C761E33685A00D74345 /* Main.storyboard */,
 				C5629C791E33685A00D74345 /* Info.plist */,
+				C5E0BF641E86BF6000637531 /* Lesson54-Bridging-Header.h */,
 			);
 			path = Lesson54;
 			sourceTree = "<group>";
@@ -194,6 +201,7 @@
 					C5629C6C1E33685A00D74345 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7HN3FL9R65;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					C5629C7D1E33685A00D74345 = {
@@ -262,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5629C731E33685A00D74345 /* ViewController.swift in Sources */,
+				C5E0BF671E86BF6000637531 /* YellowButtonCell.m in Sources */,
 				C5629C711E33685A00D74345 /* AppDelegate.swift in Sources */,
 				C5B7B6551E345A35006ED415 /* BlueButton.swift in Sources */,
 			);
@@ -404,12 +413,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HN3FL9R65;
 				INFOPLIST_FILE = Lesson54/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaorui.Lesson54;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lesson54/Lesson54-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -418,12 +430,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HN3FL9R65;
 				INFOPLIST_FILE = Lesson54/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaorui.Lesson54;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lesson54/Lesson54-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
