@@ -11,6 +11,5 @@
 
 @interface CloseButton : NSButton
 
-@property (strong,nonatomic) NSImage * x_img;
 
 @end

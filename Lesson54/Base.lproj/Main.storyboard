@@ -726,6 +726,7 @@
                     </view>
                     <connections>
                         <outlet property="blue_button" destination="lKw-L5-ntC" id="Kz3-TM-f6g"/>
+                        <outlet property="close_button" destination="S1l-oD-R6B" id="Mo8-Ib-6pB"/>
                         <outlet property="yellow_button" destination="wnk-qk-0SH" id="aGD-TO-Ybe"/>
                     </connections>
                 </viewController>

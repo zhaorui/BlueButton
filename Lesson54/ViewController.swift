@@ -8,10 +8,12 @@
 
 import Cocoa
 
+
 class ViewController: NSViewController {
 
     @IBOutlet weak var blue_button: NSButton!
     @IBOutlet weak var yellow_button: NSButton!
+    @IBOutlet weak var close_button: CloseButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,10 @@ class ViewController: NSViewController {
         
         //set below to true, yellow cell won't draw the frame
         yellow_button.showsBorderOnlyWhileMouseInside = true;
+        
+        close_button.target = self
+        close_button.action = #selector(closeWindow)
+        
     }
     
 
@@ -28,6 +34,9 @@ class ViewController: NSViewController {
         }
     }
 
+    func closeWindow() {
+        self.view.window?.close()
+    }
 
 }
 

@@ -14,6 +14,7 @@
     // good strong weak demo!
     __strong CALayer * bg_layer;
     __strong CALayer *  x_layer;
+    NSImage * x_img; //in ARC pointer is strong by default, in MRC it's weak by default
 }
 
 // we init image in |viewDidMoveToWindow| since the button might be init from xib or strory board
@@ -53,17 +54,19 @@
     
     [self addTrackingRect:self.bounds owner:self userData:nil assumeInside:NO];
     
-    self.x_img = [[NSImage alloc] initWithSize:NSMakeSize(100, 100)];
-    [self.x_img lockFocus];
+    x_img = [[NSImage alloc] initWithSize:NSMakeSize(100, 100)];
+    [x_img lockFocus];
+    
+    //we need strong reference for this, since in ARC, |path| will be autorelase
     NSBezierPath * path = [[NSBezierPath alloc] init];
     [[NSColor whiteColor] set];
-    [path moveToPoint:NSMakePoint(0, self.x_img.size.height)];
-    [path lineToPoint:NSMakePoint(self.x_img.size.width, 0)];
+    [path moveToPoint:NSMakePoint(0, x_img.size.height)];
+    [path lineToPoint:NSMakePoint(x_img.size.width, 0)];
     [path moveToPoint:NSMakePoint(0, 0)];
-    [path lineToPoint:NSMakePoint(self.x_img.size.width, self.x_img.size.height)];
+    [path lineToPoint:NSMakePoint(x_img.size.width, x_img.size.height)];
     [path setLineWidth:10.0];
     [path stroke];
-    [self.x_img unlockFocus];
+    [x_img unlockFocus];
     
     
     bg_layer = [[CALayer alloc] init];
@@ -77,7 +80,7 @@
     
     x_layer = [[CALayer alloc] init];
     x_layer.frame = CGRectInset(bg_layer.frame, 0.2 * NSWidth(bg_layer.frame), 0.2*NSHeight(bg_layer.frame));
-    x_layer.contents = self.x_img;
+    x_layer.contents = x_img;
     [self.layer addSublayer:x_layer];
     
 }
