@@ -34,15 +34,16 @@ class BlueButton: NSButton {
     
     override func updateLayer() {
         if self.isHighlighted {
-            self.layer?.contents = button_pressed_img
+            self.layer?.contents = button_pressed_img.layerContents(forContentsScale: button_pressed_img.recommendedLayerContentsScale(0))
         } else {
-            self.layer?.contents = button_img
+            self.layer?.contents = button_img.layerContents(forContentsScale: button_img.recommendedLayerContentsScale(0))
         }
+        self.layer?.contentsScale = 2 //My Mac is retina, set it to 2
     }
     
     override func viewDidMoveToWindow() {
         //contentScale works when contentsGravity is kCAGravityCenter
-        self.layer?.contentsScale = 2 //My Mac is retina, set it to 2
+        self.layerContentsRedrawPolicy = .onSetNeedsDisplay
         self.layer?.contentsGravity = kCAGravityResize
         self.layer?.contentsCenter = CGRect(x: 0.2, y: 0.2, width: 0.6, height: 0.6)
     }
