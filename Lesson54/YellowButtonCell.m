@@ -41,10 +41,16 @@
 
 -(NSRect)drawTitle:(NSAttributedString *)title withFrame:(NSRect)frame inView:(NSView *)controlView {
     
-    CGRect target_rect = CGRectOffset(frame, 0, -10);
+    CGRect target_rect = CGRectOffset(frame, 0, 0);
+    
     [[NSColor greenColor] set];
     [[NSBezierPath bezierPathWithRect:target_rect] stroke];
     [title drawInRect:target_rect];
+    
+    [[NSColor redColor] set];
+    [[NSBezierPath bezierPathWithRect:controlView.bounds] stroke];
+    
+    
     return target_rect;
 }
 

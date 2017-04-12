@@ -20,7 +20,7 @@ class ViewController: NSViewController {
         blue_button.title = "Button"
         
         //set below to true, yellow cell won't draw the frame
-        yellow_button.showsBorderOnlyWhileMouseInside = true;
+        yellow_button.showsBorderOnlyWhileMouseInside = true
         
         close_button.target = self
         close_button.action = #selector(closeWindow)
