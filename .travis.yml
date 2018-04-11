@@ -1,5 +1,6 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
- - rbx-3
+language: objective-c
+xcode_workspace: BlueButton.xcworkspace
+matrix:
+  include:
+    - xcode_scheme: buttoncell
+    - xcode_scheme: Lesson54
